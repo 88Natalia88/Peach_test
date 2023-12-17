@@ -1,8 +1,68 @@
 import '../scss/style.scss';
 import Swiper from 'swiper/bundle';
-
-// import styles bundle
 import 'swiper/css/bundle';
+
+document.addEventListener('DOMContentLoaded', function () {
+  const mapObject = document.querySelector('.map__bg');
+  const svgDoc = mapObject.contentDocument;
+
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      const filter = this.getAttribute('data-filter');
+      updateMap(filter);
+      updateUnderline(this);
+    });
+  });
+
+  function updateMap(filter) {
+    const allCities = svgDoc.querySelectorAll('.city');
+    allCities.forEach(city => {
+      city.style.display = 'none';
+    });
+
+    if (filter === 'all') {
+      allCities.forEach(city => {
+        city.style.display = 'inline';
+      });
+    } else {
+      const filteredCities = svgDoc.querySelectorAll(`.${filter}`);
+      filteredCities.forEach(city => {
+        city.style.display = 'inline';
+      });
+    }
+  }
+});
+
+function updateUnderline(clickedButton) {
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.classList.remove('underline');
+  });
+
+  clickedButton.classList.add('underline');
+}
+
+const showOfficies = document.getElementById('officiesBtn');
+const modal = document.querySelector('.modal');
+//const modalOverlay = document.querySelector('.modal__overlay');
+const body = document.body;
+const arrowImg = document.querySelector('.officies__roll img');
+
+showOfficies.addEventListener('click', function () {
+  const isModalVisible = modal.style.display === 'block';
+  
+  if (isModalVisible) {
+
+    modal.style.display = 'none';
+    body.style.overflow = 'auto';
+    arrowImg.classList.remove('rotate');
+  } else {
+
+    modal.style.display = 'block';
+    body.style.overflow = 'hidden';
+    arrowImg.classList.add('rotate');
+  }
+});
+
 
   const swiper = new Swiper('.swiper', {
     /*speed: 400,

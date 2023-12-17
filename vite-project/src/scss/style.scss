@@ -169,7 +169,7 @@ body{
     }
 }
 .officies{
-    &__wrapper{
+    &__header{
         width: 1250px;
         height: 80px;
         background: #FFF;
@@ -183,6 +183,7 @@ body{
         display: flex;
         margin-left: 70px;
         margin-top: 28px;
+        z-index: 1;
     }
     &__roll p{
         color: #444;
@@ -202,17 +203,26 @@ body{
         margin-left: 16px;
         cursor: pointer;
     }
+    &__roll img.rotate {
+        transform: rotate(180deg);
+    }
     &__list{
-        .list-item a{
+        .list-item{
+            margin-left: 30px;
+        }
+        .list-item p{
             color: #444;
+            font-family: 'Proxima Nova Condensed',sans-serif;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
             line-height: 20px;
-            text-decoration: none;
-            margin-left: 30px;
         }
-        .list-item a:hover{
+        .list-item button{
+            border:none;
+            background-color: transparent;
+        }
+        .list-item p:hover{
             color:#A30C33;
         }
     }
@@ -220,8 +230,20 @@ body{
         display: flex;
         margin-top: 30px;
         margin-left: 159px;
+    }
+    .filter-btn.underline {
+        border-bottom: 3px solid #A30C33;
+        padding-bottom: 27px;
+    }
+    .filter-btn.underline p{
+        color:#A30C33;
+    }
+    #map{
+        width: 1250px;
+        height: 774px;
     }  
 }
+
 .mission{
     position: relative;
     margin-top: 100px;
@@ -288,6 +310,55 @@ body{
     &__item img{
         width: 615px;
         height: 260px;
+    }
+    &__item {
+        overflow: hidden;
+        position: relative;
+        .intro{
+            width: 615px;
+            height: 80px;
+            position: absolute;
+            box-sizing: border-box;
+            background-color: rgba(45, 54, 83, 0.6);
+            bottom: 5px;
+            transition: .5s;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            -o-transition: .5s;
+}
+        .intro p {
+            color: var(--1, #FFF);
+            font-family: 'Proxima Nova Condensed', sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            visibility: hidden;
+            opacity: 0;
+            margin: 20px auto auto 20px;
+            width: 480px;
+        }
+        .intro h3{
+            color: var(--1, #FFF);
+            font-family: 'Proxima Nova Condensed',sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            margin: 28px auto 28px 20px;
+        }
+    }
+    &__item:hover{
+        cursor: pointer;   
+    }
+    &__item:hover .intro{
+        height: 260px;
+        bottom: 5px;
+    }
+    &__item:hover .intro p{
+        opacity: 1;
+        visibility: visible;
     }
 }
 .benefits{
@@ -363,12 +434,14 @@ body{
 }
 .life{
     margin-top: 103px;
+    margin-bottom: 70px;
     &__title{
         text-align: left;
         margin-left: 70px;
     }
     .swiper-wrapper{
       text-align: center;
+      margin-bottom: 34px;
     }
     .swiper-slide img{
         width: 1110px;
@@ -377,11 +450,18 @@ body{
 }
 .modal{
     display: none;
-    width: 1250px;
-    height: auto;
-    background: #FFF;
-    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
     &__wrapper{
+        background-color: #fff;
+        box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
+        width: 1250px;
+        height: auto;
+        z-index: 1;
+    }
+    &__container{
         display: flex;
         justify-content: center;
     }
@@ -406,4 +486,26 @@ body{
         line-height: 20px;
         padding-bottom: 10px;
     }
+      &__overlay{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom:0;
+        background: rgba(240, 243, 245, 0.5);
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }  
+}
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    background: rgba(240, 243, 245, 0.4);
 }

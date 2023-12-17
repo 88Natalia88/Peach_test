@@ -6,6 +6,7 @@
     <title>Softline</title>
   </head>
   <body>
+      <!-- header -->
     <div id="app">
       <header class="header">
         <div class="header__logo">
@@ -21,7 +22,8 @@
         </nav>
       </header>
       <main>
-        <div class="first-page">
+          <!-- path 1 -->
+        <section class="first-page">
           <div class="first-page__wrapper">
             <div class="first-page__title">
               <p>Поставщик услуг цифровой трансформации и кибербезопасности</p>
@@ -32,8 +34,9 @@
               </button>
             </div>
           </div>
-        </div>
-        <div class="about">
+        </section>
+         <!-- path 2 -->
+        <section class="about">
           <div class="about__wrapper">
             <div class="about__text">
               <p><span>Softline</span> - ведущий поставщик IT-решений и сервисов.* <br>
@@ -42,8 +45,9 @@
                 и кибербезопасности, а также широкий спектр IT-услуг.</p>
             </div>
           </div>
-        </div>
-        <div class="statistics">
+        </section>
+         <!-- path 3 -->
+        <section class="statistics">
           <div class="statistics__wrapper">
             <div class="statistics__row-one">
               <div class="statistics__wrapper-item">
@@ -84,8 +88,9 @@
               </div>
               </div>
           </div>
-        </div>
-        <div class="officies">
+        </section>
+          <!-- path 4 -->
+        <section class="officies">
           <div class="officies__wrapper">
             <div class="officies__header">
               <div class="officies__roll">
@@ -96,21 +101,136 @@
               </div>
               <div class="officies__list">
                 <ul>
-                  <li class="list-item"><a href="#">Все</a></li>
-                  <li class="list-item"><a href="#">Москва</a></li>
-                  <li class="list-item"><a href="#">Центр</a></li>
-                  <li class="list-item"><a href="#">Северо-запад</a></li>
-                  <li class="list-item"><a href="#">Юг</a></li>
-                  <li class="list-item"><a href="#">Волга</a></li>
-                  <li class="list-item"><a href="#">Урал</a></li>
-                  <li class="list-item"><a href="#">Сибирь</a></li>
-                  <li class="list-item"><a href="#">Дальний восток</a></li>
+                  <li class="list-item">
+                    <button class="filter-btn underline" data-filter="all">
+                      <p>Все</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="moscow">
+                      <p>Москва</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="center">
+                      <p>Центр</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="west">
+                      <p>Северо-запад</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="sounth">
+                      <p>Юг</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="volga">
+                      <p>Волга</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="ural">
+                      <p>Урал</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="siberia">
+                      <p>Сибирь</p>
+                    </button>
+                  </li>
+                  <li class="list-item">
+                    <button class="filter-btn" data-filter="east">
+                      <p>Дальний восток</p>
+                    </button>
+                  </li>
                 </ul>
-              </div>
+              </div> 
+            </div>
+            <div class="officies__map">
+              <object class="map__bg" data="./public/icons/map.svg" type="image/svg+xml">
+              </object>
             </div>
           </div>
-        </div>
-        <div class="mission">
+          <!-- modal -->
+          <div class="modal">
+            <div class="modal__overlay">
+              <div class="modal__wrapper">
+                <div class="modal__container">
+                  <div class="modal__item">
+                    <p>Москва</p>
+                  </div>
+                  <div class="modal__item">
+                    <p>Центр</p>
+                    <ul>
+                      <li>Воронеж</li>
+                      <li>Ярославль</li>
+                      <li>Белгород</li>
+                    </ul>
+                  </div>
+                  <div class="modal__item">
+                    <p>Северо-запад</p>
+                    <ul>
+                      <li>Санкт-Петербург</li>
+                      <li>Калининград</li>
+                    </ul>
+                  </div>
+                  <div class="modal__item">
+                    <p>Юг</p>
+                    <ul>
+                      <li>Ростов-на-Дону</li>
+                      <li>Краснодар</li>
+                      <li>Волгоград</li>
+                    </ul>
+                  </div>
+                  <div class="modal__item">
+                    <p>Волга</p>
+                    <ul>
+                      <li>Казань</li>
+                      <li>Самара</li>
+                      <li>Уфа</li>
+                      <li>Оренбург</li>
+                      <li>Нижний Новгород</li>
+                    </ul>
+                  </div>
+                  <div class="modal__item">
+                    <p>Урал</p>
+                    <ul>
+                      <li>Екатеринбург</li>
+                      <li>Челябинск</li>
+                      <li>Пермь</li>
+                      <li>Сургут</li>
+                      <li>Тюмень</li>
+                      <li>Ижевск</li>
+                    </ul>
+                  </div>
+                  <div class="modal__item">
+                    <p>Сибирь</p>
+                    <ul>
+                      <li>Новосибирск</li>
+                      <li>Омск</li>
+                      <li>Томск</li>
+                      <li>Красноярск</li>
+                      <li>Иркутск</li>
+                    </ul>
+                  </div>
+                  <div class="modal__item">
+                    <p>Дальний восток</p>
+                    <ul>
+                      <li>Хабаровск</li>
+                      <li>Владивосток</li>
+                    </ul>
+                  </div>
+            </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+          <!-- part 5 -->
+        <section class="mission">
           <div class="mission__wrapper">
             <div class="mission__title">
               <p>Миссия Softline</p>
@@ -119,8 +239,9 @@
               <p>Мы помогаем организациям трансформироваться, работать эффективно и безопасно в условиях цифровой экономики.</p>
             </diiv>
           </div>
-        </div>
-        <div class="directions">
+        </section>
+          <!-- part 6 -->
+        <section class="directions">
           <div class="directions__wrapper">
             <div class="directions__title title">
               <p>Направления бизнеса</p>
@@ -128,26 +249,66 @@
             <div class="directions__list">
               <div class="directions__item">
                 <img src="./public/images/IMG1.png" alt="solution">
+                <div class="intro">
+                  <h3>Решения Softline</h3>
+                  <p>ГК Softline предлагает клиентам собственную линейку оборудования
+                    (ПК, серверы, торговое оборудование и проч.), разработку программных
+                    продуктов, облачных решений, решений в области информационной безопасности.
+                  </p>
+                </div>
               </div>
               <div class="directions__item">
                 <img src="./public/images/IMG2.png" alt="lock">
+                <div class="intro">
+                  <h3>Кибербезопасность</h3>
+                  <p>Softline обладает всеми необходимыми государственными лицензиями для
+                    организации проектов по информационной безопасности и аттестации. 
+                  </p>
+                </div>
               </div>
               <div class="directions__item">
                 <img src="./public/images/IMG3.png" alt="tablet">
+                <div class="intro">
+                  <h3>Импортозамещение</h3>
+                  <p>ГК Softline обладает широчайшим портфелем решений и услуг для
+                    импортозамещения, включая ПО и оборудование собственного производства.
+                  </p>
+                </div>
               </div>
               <div class="directions__item">
                 <img src="./public/images/IMG4.png" alt="cloud">
+                <div class="intro">
+                  <h3>Облачные решения</h3>
+                  <p>Softline использует современные облачные решения как российских, так
+                    и международных вендоров для масштабирования бизнеса своих клиентов.
+                    Подписки, услуги, трансформация.
+                  </p>
+                </div>
               </div>
               <div class="directions__item">
                 <img src="./public/images/IMG5.png" alt="man">
+                <div class="intro">
+                  <h3>Цифровая трансформация <br> и разработка ПО</h3>
+                  <p>Softline использует современные технологи и новые возможности для
+                    увеличения производительности бизнеса заказчика. В штате ГК Softline
+                    - 2000+ разработчиков, которые трансформируют ПО под нужды конкретного предприятия.
+                  </p>
+                </div>
               </div>
               <div class="directions__item">
                 <img src="./public/images/IMG6.png" alt="sked">
+                <div class="intro">
+                  <h3>Техническая поддержка Softline</h3>
+                  <p>200+ инженеров, 24 часа в сутки, 7 дней в неделю,
+                    12 месяцев в году, сервисное партнерство с 30+ мировыми производителями.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="benefits">
+        </section>
+          <!-- part 7 -->
+        <section class="benefits">
           <div class="benefits__wrapper">
               <div class="benefits__title title">
                 <p>Компенсационный пакет</p>
@@ -196,13 +357,14 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
+          <!-- past part 8 -->
         <section class="life">
           <div class="life__wrapper">
-            <div class="life__title title">
-              <p>Корпоративная жизнь</p>
-            </div>
             <div class="swiper">
+              <div class="life__title title">
+                <p>Корпоративная жизнь</p>
+              </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
               <div class="swiper-wrapper">
@@ -227,75 +389,7 @@
           </div>
           </div>
         </section>
-      </main>
-      <div class="modal">
-        <div class="modal__wrapper">
-          <div class="modal__item">
-            <p>Москва</p>
-          </div>
-          <div class="modal__item">
-            <p>Центр</p>
-            <ul>
-              <li>Воронеж</li>
-              <li>Ярославль</li>
-              <li>Белгород</li>
-            </ul>
-          </div>
-          <div class="modal__item">
-            <p>Северо-запад</p>
-            <ul>
-              <li>Санкт-Петербург</li>
-              <li>Калининград</li>
-            </ul>
-          </div>
-          <div class="modal__item">
-            <p>Юг</p>
-            <ul>
-              <li>Ростов-на-Дону</li>
-              <li>Краснодар</li>
-              <li>Волгоград</li>
-            </ul>
-          </div>
-          <div class="modal__item">
-            <p>Волга</p>
-            <ul>
-              <li>Казань</li>
-              <li>Самара</li>
-              <li>Уфа</li>
-              <li>Оренбург</li>
-              <li>Нижний Новгород</li>
-            </ul>
-          </div>
-          <div class="modal__item">
-            <p>Урал</p>
-            <ul>
-              <li>Екатеринбург</li>
-              <li>Челябинск</li>
-              <li>Пермь</li>
-              <li>Сургут</li>
-              <li>Тюмень</li>
-              <li>Ижевск</li>
-            </ul>
-          </div>
-          <div class="modal__item">
-            <p>Сибирь</p>
-            <ul>
-              <li>Новосибирск</li>
-              <li>Омск</li>
-              <li>Томск</li>
-              <li>Красноярск</li>
-              <li>Иркутск</li>
-            </ul>
-          </div>
-          <div class="modal__item">
-            <p>Дальний восток</p>
-            <ul>
-              <li>Хабаровск</li>
-              <li>Владивосток</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </main>  
     </div>
     <script type="module" src="src/js/main.js"></script>
   </body>
