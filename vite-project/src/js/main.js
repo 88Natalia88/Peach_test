@@ -2,6 +2,42 @@ import '../scss/style.scss';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+document.addEventListener('DOMContentLoaded', async function () {
+  const svgUrl = './public/icons/map.svg?raw';
+  const svgResponse = await fetch(svgUrl);
+  const svgText = await svgResponse.text();
+
+  const svgContainer = document.querySelector('.map');
+  svgContainer.innerHTML = svgText;
+
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      const filter = this.getAttribute('data-filter');
+      updateMap(filter);
+      updateUnderline(this);
+    });
+  });
+
+  function updateMap(filter) {
+    const allCities = svgContainer.querySelectorAll('.city');
+    allCities.forEach(city => {
+      city.style.display = 'none';
+    });
+
+    if (filter === 'all') {
+      allCities.forEach(city => {
+        city.style.display = 'inline';
+      });
+    } else {
+      const filteredCities = svgContainer.querySelectorAll(`.${filter}`);
+      filteredCities.forEach(city => {
+        city.style.display = 'inline';
+      });
+    }
+  }
+});
+
+/*
 document.addEventListener('DOMContentLoaded', function () {
   const mapObject = document.querySelector('.map__bg');
   const svgDoc = mapObject.contentDocument;
@@ -31,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-});
+});*/
 
 function updateUnderline(clickedButton) {
   document.querySelectorAll('.filter-btn').forEach(button => {

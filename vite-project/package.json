@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "sass": "^1.69.5",
     "vite": "^5.0.8",
     "vite-plugin-inspect": "^0.8.1"
