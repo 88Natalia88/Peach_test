@@ -238,9 +238,9 @@ body{
     .filter-btn.underline p{
         color:#A30C33;
     }
-    #map{
+    &__map{
         width: 1250px;
-        height: 774px;
+        height: 604px;
     }  
 }
 
@@ -440,8 +440,8 @@ body{
         margin-left: 70px;
     }
     .swiper-wrapper{
-      text-align: center;
-      margin-bottom: 34px;
+        text-align: center;
+        margin-bottom: 34px;
     }
     .swiper-slide img{
         width: 1110px;
@@ -486,7 +486,7 @@ body{
         line-height: 20px;
         padding-bottom: 10px;
     }
-      &__overlay{
+    &__overlay{
         position: fixed;
         left: 0;
         right: 0;
@@ -498,14 +498,76 @@ body{
         width: 100%;
         justify-content: center;
         align-items: center;
-      }  
+    }  
 }
-.overlay {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    position: fixed;
-    background: rgba(240, 243, 245, 0.4);
+@media screen and (max-width: 330px) {
+    #app{
+        max-width: 290px;
+    }
+    .header{
+        display: grid;
+        height: 110px;
+        &__logo img{
+            margin-left: 5px;
+            margin-top: 16px;
+        }
+        &__menu{
+            margin-top: 32px;
+            margin-right: 50px;
+            display: flex;
+        }
+        &__menu-item{
+            color: #444;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            margin-right: 20px;
+        }
+    }
+    .first-page{
+        background-image: url(../../public/images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        height: 300px;
+        width: 290px;
+        overflow: visible;
+        &__link a{
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            outline: none;
+        }
+        &__button{
+            width: 110px;
+            height: 56px;
+            border-radius: 8px;
+            background-color: #B01736;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 70px;
+            border: none;
+            cursor: pointer;
+        }
+        &__button:hover{
+            background-color: #D43152;
+        }
+        &__title{
+            color: #444;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            width: 709px;
+            margin-bottom: 60px;
+        }
+        &__wrapper{
+            margin-left: 70px;
+        }
+    }
 }
