@@ -1,7 +1,5 @@
-import Inspect from 'vite-plugin-inspect'
+import { defineConfig } from 'vite';
 
-export default {
-  plugins: [
-    Inspect()
-  ],
-}
+export default defineConfig({
+    base: '/Peach_test/',
+  });

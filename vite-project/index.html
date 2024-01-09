@@ -1,55 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./public/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./public/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Softline</title>
   </head>
   <body>
-      <!-- header -->
-    <div id="app">
+    <div class="wrapper">
       <header class="header">
-        <div class="header__logo">
-          <img src="public/icons/logo.svg" alt="logo">
+        <div class="header__wrap">
+          <a href="#" class="header__logo">
+            <img src="public/icons/logo.svg" alt="logo">
+          </a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">Облачные решения</li>
+              <li class="header__menu-item">Кибербезопасность</li>
+              <li class="header__menu-item">Импортозамещение</li>
+              <li class="header__menu-item">Цифровая трансформация</li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__menu-item">Облачные решения</li>
-            <li class="header__menu-item">Кибербезопасность</li>
-            <li class="header__menu-item">Импортозамещение</li>
-            <li class="header__menu-item">Цифровая трансформация</li>
-          </ul>
-        </nav>
       </header>
       <main>
-          <!-- path 1 -->
-        <section class="first-page">
-          <div class="first-page__wrapper">
-            <div class="first-page__title">
-              <p>Поставщик услуг цифровой трансформации и кибербезопасности</p>
+        <section class="first-page mb-100">
+          <div class="first-page__wrap">
+          <picture class="picture object-fit-cover">
+            <img src="public/images/bg1.png" srcset="public/images/bg1.png, public/images/bg@2x.png 2x" alt="backgroung">
+          </picture>
+            
+              <div class="first-page__title section-title">
+                <p>Поставщик услуг цифровой трансформации и кибербезопасности</p>
+              </div>
+              <div class="first-page__link">
+                <button class="first-page__button">
+                  <a href="https://softline.ru">На сайт</a>
+                </button>
+              </div>
             </div>
-            <div class="first-page__link">
-              <button class="first-page__button">
-                <a href="https://softline.ru">На сайт</a>
-              </button>
+        </section>
+        <div class="about mb-100">
+          <div class="container">
+            <div class="about__wrap">
+              <div class="about__text">
+                <p><span>Softline</span> - ведущий поставщик IT-решений и сервисов.*
+                  Мы предлагаем комплексные IT-решения, облака, программное 
+                  и аппаратное обеспечение, решения по цифровой трансформации 
+                  и кибербезопасности, а также широкий спектр IT-услуг.</p>
+              </div>
             </div>
           </div>
-        </section>
-         <!-- path 2 -->
-        <section class="about">
-          <div class="about__wrapper">
-            <div class="about__text">
-              <p><span>Softline</span> - ведущий поставщик IT-решений и сервисов.* <br>
-                Мы предлагаем комплексные IT-решения, облака, программное <br>
-                и аппаратное обеспечение, решения по цифровой трансформации <br>
-                и кибербезопасности, а также широкий спектр IT-услуг.</p>
-            </div>
-          </div>
-        </section>
-         <!-- path 3 -->
-        <section class="statistics">
-          <div class="statistics__wrapper">
-            <div class="statistics__row-one">
+        </div>
+        <div class="statistics mb-100">
+          <div class="container">
+            <div class="statistics__wrap">
               <div class="statistics__wrapper-item">
                 <div class="item-number">
                   <p><span>></span> 30 лет</p>
@@ -68,8 +79,7 @@
                 </div>
                 <div class="item-explanation"><p>городов России</p></div>
             </div>
-            </div>
-            <div class="statistics__row-two">
+          
               <div class="statistics__wrapper-item">
                 <div class="item-number">
                   <p>2000 <span>+</span></p>
@@ -82,15 +92,15 @@
                 <div class="item-number">
                   <p>3000 <span>+</span></p>
                 </div>
-                <div class="item-explanation">
+                <div class="item-explanation last">
                   <p>сотрудников ежегодно проходят оценку и обучение</p>
                 </div>
               </div>
-              </div>
           </div>
-        </section>
-          <!-- path 4 -->
-        <section class="officies">
+          </div>
+      
+        </div>
+        <div class="officies mb-100">
           <div class="officies__wrapper">
             <div class="officies__header">
               <div class="officies__roll">
@@ -98,6 +108,9 @@
                 <div>
                   <button id="officiesBtn"><img src="./public/icons/button-down.svg" alt="down"></button>
                 </div>
+              </div>
+              <div id="newList">
+
               </div>
               <div class="officies__list">
                 <ul>
@@ -150,90 +163,86 @@
               </div> 
             </div>
             <div class="officies__map">
-            <!----  <object class="map__bg" data="./public/icons/map.svg" type="image/svg+xml">
-              </object>--->
-              <div class="map"></div>
+            
             </div>
           </div>
-          <!-- modal -->
-          <div class="modal">
-            <div class="modal__overlay">
-              <div class="modal__wrapper">
-                <div class="modal__container">
-                  <div class="modal__item">
-                    <p>Москва</p>
-                  </div>
-                  <div class="modal__item">
-                    <p>Центр</p>
-                    <ul>
-                      <li>Воронеж</li>
-                      <li>Ярославль</li>
-                      <li>Белгород</li>
-                    </ul>
-                  </div>
-                  <div class="modal__item">
-                    <p>Северо-запад</p>
-                    <ul>
-                      <li>Санкт-Петербург</li>
-                      <li>Калининград</li>
-                    </ul>
-                  </div>
-                  <div class="modal__item">
-                    <p>Юг</p>
-                    <ul>
-                      <li>Ростов-на-Дону</li>
-                      <li>Краснодар</li>
-                      <li>Волгоград</li>
-                    </ul>
-                  </div>
-                  <div class="modal__item">
-                    <p>Волга</p>
-                    <ul>
-                      <li>Казань</li>
-                      <li>Самара</li>
-                      <li>Уфа</li>
-                      <li>Оренбург</li>
-                      <li>Нижний Новгород</li>
-                    </ul>
-                  </div>
-                  <div class="modal__item">
-                    <p>Урал</p>
-                    <ul>
-                      <li>Екатеринбург</li>
-                      <li>Челябинск</li>
-                      <li>Пермь</li>
-                      <li>Сургут</li>
-                      <li>Тюмень</li>
-                      <li>Ижевск</li>
-                    </ul>
-                  </div>
-                  <div class="modal__item">
-                    <p>Сибирь</p>
-                    <ul>
-                      <li>Новосибирск</li>
-                      <li>Омск</li>
-                      <li>Томск</li>
-                      <li>Красноярск</li>
-                      <li>Иркутск</li>
-                    </ul>
-                  </div>
-                  <div class="modal__item">
-                    <p>Дальний восток</p>
-                    <ul>
-                      <li>Хабаровск</li>
-                      <li>Владивосток</li>
-                    </ul>
-                  </div>
-            </div>
-              </div>
-              
+        <!-- modal ---->
+        <div class="modal">
+          <div class="modal__overlay">
+            <div class="modal__wrapper">
+              <div class="modal__container">
+                <div class="modal__item">
+                  <p>Москва</p>
+                </div>
+                <div class="modal__item">
+                  <p>Центр</p>
+                  <ul>
+                    <li>Воронеж</li>
+                    <li>Ярославль</li>
+                    <li>Белгород</li>
+                  </ul>
+                </div>
+                <div class="modal__item">
+                  <p>Северо-запад</p>
+                  <ul>
+                    <li>Санкт-Петербург</li>
+                    <li>Калининград</li>
+                  </ul>
+                </div>
+                <div class="modal__item">
+                  <p>Юг</p>
+                  <ul>
+                    <li>Ростов-на-Дону</li>
+                    <li>Краснодар</li>
+                    <li>Волгоград</li>
+                  </ul>
+                </div>
+                <div class="modal__item">
+                  <p>Волга</p>
+                  <ul>
+                    <li>Казань</li>
+                    <li>Самара</li>
+                    <li>Уфа</li>
+                    <li>Оренбург</li>
+                    <li>Нижний Новгород</li>
+                  </ul>
+                </div>
+                <div class="modal__item">
+                  <p>Урал</p>
+                  <ul>
+                    <li>Екатеринбург</li>
+                    <li>Челябинск</li>
+                    <li>Пермь</li>
+                    <li>Сургут</li>
+                    <li>Тюмень</li>
+                    <li>Ижевск</li>
+                  </ul>
+                </div>
+                <div class="modal__item">
+                  <p>Сибирь</p>
+                  <ul>
+                    <li>Новосибирск</li>
+                    <li>Омск</li>
+                    <li>Томск</li>
+                    <li>Красноярск</li>
+                    <li>Иркутск</li>
+                  </ul>
+                </div>
+                <div class="modal__item">
+                  <p>Дальний восток</p>
+                  <ul>
+                    <li>Хабаровск</li>
+                    <li>Владивосток</li>
+                  </ul>
+                </div>
+          </div>
             </div>
           </div>
-        </section>
-          <!-- part 5 -->
-        <section class="mission">
+          </div>
+        </div>
+        <section class="mission mb-100">
           <div class="mission__wrapper">
-            <div class="mission__title">
+            <div class="mission__title section-title">
               <p>Миссия Softline</p>
             </div>
             <diiv class="mission__text">
@@ -241,17 +250,28 @@
             </diiv>
           </div>
         </section>
-          <!-- part 6 -->
-        <section class="directions">
+        <section class="directions mb-100">
           <div class="directions__wrapper">
-            <div class="directions__title title">
+            <div class="directions__title section-title">
               <p>Направления бизнеса</p>
             </div>
             <div class="directions__list">
               <div class="directions__item">
-                <img src="./public/images/IMG1.png" alt="solution">
+                <div class="imgWrap">
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/IMG1.png" srcset="public/images/IMG1.png, public/images/IMG1@2x.png 2x" alt="solution">
+                  </picture>
+                </div>
+                
+                
                 <div class="intro">
-                  <h3>Решения Softline</h3>
+                  <div class="intro__title">
+                    <h3>Решения Softline</h3>
+                    <div class="intro__button">
+                      <button class="introBtn"><img src='public/icons/arrow_white.svg' alt='белая стрелка'></button>
+                    </div>
+                  </div>
+                  
                   <p>ГК Softline предлагает клиентам собственную линейку оборудования
                     (ПК, серверы, торговое оборудование и проч.), разработку программных
                     продуктов, облачных решений, решений в области информационной безопасности.
@@ -259,27 +279,60 @@
                 </div>
               </div>
               <div class="directions__item">
-                <img src="./public/images/IMG2.png" alt="lock">
+                <div class="imgWrap">
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/IMG2.png" srcset="public/images/IMG2.png, public/images/IMG2@2x.png 2x" alt="lock">
+                  </picture>
+                </div>
+                
                 <div class="intro">
-                  <h3>Кибербезопасность</h3>
+                  <div class="intro__title">
+                    <h3>Кибербезопасность</h3>
+                    <div class="intro__button">
+                      <button class="introBtn"><img src='public/icons/arrow_white.svg' alt='белая стрелка'></button>
+                    </div>
+                  </div>
+                  
                   <p>Softline обладает всеми необходимыми государственными лицензиями для
                     организации проектов по информационной безопасности и аттестации. 
                   </p>
                 </div>
               </div>
               <div class="directions__item">
-                <img src="./public/images/IMG3.png" alt="tablet">
+                <div class="imgWrap">
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/IMG3.png" srcset="public/images/IMG3.png, public/images/IMG3@2x.png 2x" alt="tablet">
+                  </picture>
+                </div>
+                
                 <div class="intro">
-                  <h3>Импортозамещение</h3>
+                  <div class="intro__title">
+                    <h3>Импортозамещение</h3>
+                    <div class="intro__button">
+                      <button class="introBtn"><img src='public/icons/arrow_white.svg' alt='белая стрелка'></button>
+                    </div>
+                  </div>
+                  
                   <p>ГК Softline обладает широчайшим портфелем решений и услуг для
                     импортозамещения, включая ПО и оборудование собственного производства.
                   </p>
                 </div>
               </div>
               <div class="directions__item">
-                <img src="./public/images/IMG4.png" alt="cloud">
+                <div class="imgWrap">
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/IMG4.png" srcset="public/images/IMG4.png, public/images/IMG4@2x.png 2x" alt="cloud">
+                  </picture>
+                </div>
+                
                 <div class="intro">
-                  <h3>Облачные решения</h3>
+                  <div class="intro__title">
+                    <h3>Облачные решения</h3>
+                    <div class="intro__button">
+                      <button class="introBtn"><img src='public/icons/arrow_white.svg' alt='белая стрелка'></button>
+                    </div>
+                  </div>
+                  
                   <p>Softline использует современные облачные решения как российских, так
                     и международных вендоров для масштабирования бизнеса своих клиентов.
                     Подписки, услуги, трансформация.
@@ -287,9 +340,20 @@
                 </div>
               </div>
               <div class="directions__item">
-                <img src="./public/images/IMG5.png" alt="man">
+                <div class="imgWrap">
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/IMG5.png" srcset="public/images/IMG5.png, public/images/IMG5@2x.png 2x" alt="man">
+                  </picture>
+                </div>
+                
                 <div class="intro">
-                  <h3>Цифровая трансформация <br> и разработка ПО</h3>
+                  <div class="intro__title ">
+                    <h3>Цифровая трансформация <br> и разработка ПО</h3>
+                    <div class="intro__button">
+                      <button class="introBtn"><img src='public/icons/arrow_white.svg' alt='белая стрелка'></button>
+                    </div>
+                  </div>
+                  
                   <p>Softline использует современные технологи и новые возможности для
                     увеличения производительности бизнеса заказчика. В штате ГК Softline
                     - 2000+ разработчиков, которые трансформируют ПО под нужды конкретного предприятия.
@@ -297,9 +361,20 @@
                 </div>
               </div>
               <div class="directions__item">
-                <img src="./public/images/IMG6.png" alt="sked">
+                <div class="imgWrap">
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/IMG6.png" srcset="public/images/IMG6.png, public/images/IMG6@2x.png 2x" alt="sked">
+                  </picture>
+                </div>
+                
                 <div class="intro">
-                  <h3>Техническая поддержка Softline</h3>
+                  <div class="intro__title">
+                    <h3>Техническая поддержка Softline</h3>
+                    <div class="intro__button">
+                      <button class="introBtn"><img src='public/icons/arrow_white.svg' alt='белая стрелка'></button>
+                    </div>
+                  </div>
+                  
                   <p>200+ инженеров, 24 часа в сутки, 7 дней в неделю,
                     12 месяцев в году, сервисное партнерство с 30+ мировыми производителями.
                   </p>
@@ -308,10 +383,10 @@
             </div>
           </div>
         </section>
-          <!-- part 7 -->
-        <section class="benefits">
-          <div class="benefits__wrapper">
-              <div class="benefits__title title">
+        <section class="benefits mb-100">
+          <div class="container">
+            <div class="benefits__wrapper">
+              <div class="benefits__title section-title">
                 <p>Компенсационный пакет</p>
               </div>
               <div class="benefits__list1">
@@ -358,40 +433,52 @@
               </div>
             </div>
           </div>
+          </div>
+          
         </section>
-          <!-- past part 8 -->
         <section class="life">
-          <div class="life__wrapper">
-            <div class="swiper">
-              <div class="life__title title">
+          <div class="container">
+            <div class="life__slide  swiper">
+              <div class="life__title section-title">
                 <p>Корпоративная жизнь</p>
               </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src='./public/images/slide2.jpg' alt='photo1'>
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/slide1.png" srcset="public/images/slide1.png, public/images/slide1@2x.png 2x" alt="photo1">
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img src='./public/images/slide1.jpg' alt='photo2'>
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/slide2.png" srcset="public/images/slide2.png, public/images/slide2@2x.png 2x" alt="photo2">
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img src='./public/images/slide3.jpg' alt='photo3'>
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/slide3.png" srcset="public/images/slide3.png, public/images/slide3@2x.png 2x" alt="photo3">
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img src='./public/images/slide4.jpg' alt='photo4'>
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/slide4.png" srcset="public/images/slide4.png, public/images/slide4@2x.png 2x" alt="photo4">
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img src='./public/images/slide5.jpg' alt='photo5'>
+                  <picture class="picture object-fit-cover">
+                    <img src="public/images/slide5.png" srcset="public/images/slide5.png, public/images/slide5@2x.png 2x" alt="photo5">
+                  </picture>
                 </div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
           </div>
           </div>
         </section>
-      </main>  
     </div>
+  </main>
     <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/map.js"></script>
   </body>
 </html>
