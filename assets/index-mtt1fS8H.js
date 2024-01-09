@@ -39,7 +39,7 @@
     <div class="list__item">
     <div class='item'>
       <p>Москва</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Москва</li>
@@ -48,7 +48,7 @@
   <div class="list__item">
     <div class='item'>
       <p>Центр</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Воронеж</li>
@@ -59,7 +59,7 @@
   <div class="list__item">
     <div class='item'>
       <p>Северо-<br>запад</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Санкт-Петербург</li>
@@ -69,7 +69,7 @@
   <div class="list__item">
     <div class='item'>
       <p>Юг</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Ростов-на-<br>Дону</li>
@@ -80,7 +80,7 @@
   <div class="list__item">
     <div class='item'>
       <p>Волга</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Казань</li>
@@ -93,7 +93,7 @@
   <div class="list__item">
     <div class='item'>
       <p>Урал</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Екатеринбург</li>
@@ -107,7 +107,7 @@
   <div class="list__item">
     <div class='item'>
       <p>Сибирь</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Новосибирск</li>
@@ -120,7 +120,7 @@
   <div class="list__item">
     <div class='item'>
       <p>Дальний <br> восток</p>
-      <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
+      <button class='listBtn'><img src="./public/icons/arrow.svg" alt="arrow"></button>
     </div>
     <ul>
       <li>Хабаровск</li>
