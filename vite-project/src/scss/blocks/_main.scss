@@ -2,18 +2,15 @@
     position: relative;
     height: 600px;
     width: 100%;
-    //min-width: 1250px;
     @include xxs {
         height: 300px;
-        //min-width: 290px;
     }
     &__wrap{
-        //width: 100%;
         height: 100%;
     }
     &__wrap img{
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
     &__link{
         position: absolute;
@@ -171,23 +168,12 @@
     }
 }
 .officies{
-    //position: relative;
     @include xxs {
         overflow-x: auto;
         white-space: nowrap;
-        //overflow-y: hidden;
-        //min-height: 85vh;
-        /* .filter-btn[data-filter="east"],
-        .filter-btn[data-filter="siberia"],
-        .filter-btn[data-filter="ural"],
-        .filter-btn[data-filter="volga"] {
-        display: none;
-    }*/
     }
     &__header{
-        //position: absolute;
         display: flex;
-        //min-width: 1250px;
         width: 100%;
         min-height: 80px;
         background: #FFF;
@@ -281,7 +267,6 @@
     }
 #newList{
     .list__container{
-        //position: absolute;
         padding-top: 15px;
         padding-bottom: 19px;
         display: grid;
@@ -289,7 +274,6 @@
         grid-template-rows: repeat(3,1fr);
         grid-row-gap: 15px;
         margin-left: 5px;
-        //margin-right: 12px;
         .list__item p{
             color: $dark-color;
             font-family: $nova;
@@ -330,7 +314,6 @@
         
         width: 1250px;
         height: 604px;
-        //width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -340,7 +323,6 @@
         }
 
         svg{
-            //margin-top: 290px;
             height: 100%;
             width: 100%;
         }
@@ -350,9 +332,6 @@
 .modal{
     display: none;
     position: fixed;
-    //top: 50%;
-    //left: 50%;
-    //transform: translate(-50%, -50%);
     &__wrapper{
         background-color: #fff;
         box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
@@ -370,9 +349,6 @@
         margin: 30px 0;
         column-gap: 24px;
     }
-    /*&__item{
-        margin: 30px 0 20px 24px;
-    }*/
     &__item li{
         color: $dark-color;
         font-family: $nova;
@@ -406,13 +382,10 @@
     }  
 }
 .mission{
-    //position: relative;
-    //margin-top: 100px;
     width: 100%;
     max-width: 1250px;
     height: 471px;
-    /*opacity: 0.5;*/
-   
+
     @include xxs {
         max-width: 290px;
         height: 205px;
@@ -434,8 +407,6 @@
         left: 0;
         bottom: 25px;
         background-size: contain;
-        //object-fit: contain;
-        /*transform: translate(-250%, 0);*/
         @include xxs{
             content: url('../../public/images/Left pattern.png');
         }
@@ -446,7 +417,6 @@
         background-size: contain;
         right: 0;
         bottom: 25px;
-        //object-fit: contain;
         @include xxs{
             content: url('../../public/images/Right pattern.png');
         }
@@ -536,20 +506,10 @@
             -moz-transition: .5s;
             -ms-transition: .5s;
             -o-transition: .5s;
-            /*transform: translateY(0px);
-            -webkit-transform: translateY(0px);
-            -moz-transform: translateY(0px);
-            -ms-transform: translateY(0px);
-            -o-transform: translateY(0px);*/
             @include xxs{
                 width: 280px;
                 height: 60px;
-                /*transform: translateY(21px);
-                -webkit-transform: translateY(21px);
-                -moz-transform: translateY(21px);
-                -ms-transform: translateY(21px);
-                -o-transform: translateY(21px);*/
-}
+                }
             &__title{
                 display: flex;
                 margin-left: 10px;
@@ -560,7 +520,6 @@
                 }
             }
             &__button{
-                //display: none;
                 width: 36px;
                 height: 36px;
                 margin-top: 12px;
@@ -640,34 +599,6 @@
     }
 }
 
-/*@media (hover: hover){
-    .directions__item:hover{
-        cursor: pointer;
-    }
-    .directions__item:hover .intro p{
-        opacity: 1;
-        visibility: visible;
-    }
-    .directions__item:hover .intro {
-        height: 260px;
-        bottom: 0px;
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
-    }
-}
-@media (hover: none){
-    .directions__item .intro p{
-        opacity: 1;
-        visibility: visible;
-    }
-    .directions__item .intro {
-        height: 260px;
-        bottom: 0px;
-    }
-}*/
 .benefits{
     &__wrapper{
         height: 861px;

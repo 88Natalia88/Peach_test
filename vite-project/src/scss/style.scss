@@ -1,7 +1,6 @@
 @import 'base/fonts';
 @import 'base/mixins';
 @import 'base/variables';
-@import 'blocks/footer';
 @import 'blocks/header';
 @import 'blocks/main';
 
@@ -28,7 +27,7 @@ body{
     padding: 0 20px;
     @media (max-width: 576px) {
         padding: 0 15px;
-        min-width: 300px;
+        max-width: 320px;
     }
 }
 *{
