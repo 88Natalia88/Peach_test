@@ -189,9 +189,6 @@ document.addEventListener("DOMContentLoaded", function() {
 const introBtn = document.querySelectorAll('.introBtn');
 const wrapBtn = document.querySelectorAll('.imgWrap');
 const imgWrap = document.querySelectorAll('.intro__button img');
-//const title = document.querySelectorAll('.intro__title');
-
-//const intro = document.querySelectorAll('.intro');
 introBtn.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     
@@ -201,21 +198,10 @@ introBtn.forEach((btn, index) => {
       if (wrapBtn[index].style.height === '240px') {
           wrapBtn[index].style.height = '60px'; 
           wrapBtn[index].style.overflow = 'hidden';
-          /*document.querySelectorAll('.directions__item .intro')[index].querySelectorAll('p').forEach((p) => {
-            p.style.opacity = '0';
-            p.style.visibility = 'hidden';
-          });*/
-          //intro[index].style.cssText = 'transform: translateY(180px);'
     
       } else {
           wrapBtn[index].style.height = '240px';
           wrapBtn[index].style.overflow = 'visible';
-          //intro[index].style.cssText = 'transform: translateY(0px);'
-          //title[index].style.cssText = 'transform: translateY(0px);'
-          /*document.querySelectorAll('.directions__item .intro')[index].querySelectorAll('p').forEach((p) => {
-            p.style.opacity = '1';
-            p.style.visibility = 'visible';
-          });*/
           
       }
   });
@@ -325,193 +311,6 @@ window.addEventListener('DOMContentLoaded', () => {
     handleWindowSizeChange();
   })
 })
-/*
-showOfficies.addEventListener('click', function () {
-  const isModalVisible = modal.style.display === 'block';
-  
-  if (isModalVisible) {
-
-    modal.style.display = 'none';
-    body.style.overflow = 'auto';
-    arrowImg.classList.remove('rotate');
-  } else {
-
-    const screenWidth = window.innerWidth;
-    
-    if (screenWidth >= 768) {
-      modal.style.display = 'block';
-      body.style.overflow = 'hidden';
-      arrowImg.classList.add('rotate');
-    }
-  }
-});
-
-
-document.addEventListener("DOMContentLoaded", function(){
-  const isModalVisible = modal.style.display === 'block';
-  const screenWidth = window.innerWidth;
-  if (screenWidth < 768){
-    let newList = `<div class="list__container">
-    <div class="list__item">
-      <div class='item'>
-        <p>Москва</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Москва</li>
-      </ul>
-    </div>
-    <div class="list__item">
-      <div class='item'>
-        <p>Центр</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Воронеж</li>
-        <li>Ярославль</li>
-        <li>Белгород</li>
-      </ul>
-    </div>
-    <div class="list__item">
-      <div class='item'>
-        <p>Северо-<br>запад</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Санкт-Петербург</li>
-        <li>Калининград</li>
-      </ul>
-    </div>
-    <div class="list__item">
-      <div class='item'>
-        <p>Юг</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Ростов-на-<br>Дону</li>
-        <li>Краснодар</li>
-        <li>Волгоград</li>
-      </ul>
-    </div>
-    <div class="list__item">
-      <div class='item'>
-        <p>Волга</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Казань</li>
-        <li>Самара</li>
-        <li>Уфа</li>
-        <li>Оренбург</li>
-        <li>Нижний <br> Новгород</li>
-      </ul>
-    </div>
-    <div class="list__item">
-      <div class='item'>
-        <p>Урал</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Екатеринбург</li>
-        <li>Челябинск</li>
-        <li>Пермь</li>
-        <li>Сургут</li>
-        <li>Тюмень</li>
-        <li>Ижевск</li>
-      </ul>
-    </div>
-    <div class="list__item">
-      <div class='item'>
-        <p>Сибирь</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Новосибирск</li>
-        <li>Омск</li>
-        <li>Томск</li>
-        <li>Красноярск</li>
-        <li>Иркутск</li>
-      </ul>
-    </div>
-    <div class="list__item">
-      <div class='item'>
-        <p>Дальний <br> восток</p>
-        <button class='listBtn'><img src="public/icons/arrow.svg" alt="arrow"></button>
-      </div>
-      <ul>
-        <li>Хабаровск</li>
-        <li>Владивосток</li>
-      </ul>
-    </div>
-  </div>`
-
-  showOfficies.addEventListener('click', function (){
-    filterBtns.innerHTML = newList
-    const listBtns = document.querySelectorAll('.listBtn');
-    const listBtnsImg = document.querySelectorAll('.item img');
-    const nameItems = document.querySelectorAll('.item p');
-    //console.log(listBtnsImg)
-    const listItems = document.querySelectorAll('.list__item ul');
-  
-      listBtns.forEach((listBtn, index1) => {
-        listBtn.addEventListener('click', function() {
-          nameItems.forEach((nameItem, index4) => {
-            if(index1 === index4){
-              nameItem.style.color = (nameItem.style.color === '#A30C33') ? '' : '#A30C33';
-            }
-          })
-          listBtnsImg.forEach((listBtnImg, index3) => {
-            if(index1 === index3){
-              listBtnImg.classList.toggle('rotate');
-            } else {
-              listBtnImg.classList.remove('rotate');
-            }
-          });
-          listItems.forEach((listItem, index2) => {
-            if(index1 === index2){
-              listItem.style.display = (listItem.style.display === 'flex') ? 'none' : 'flex';
-            } else {
-              listItem.style.display = 'none';
-            }
-    
-          })
-    
-        })
-      })
-  
-  })
-  } else if (isModalVisible){
-    modal.style.display = 'none';
-    body.style.overflow = 'auto';
-    arrowImg.classList.remove('rotate');
-
-    if (screenWidth >= 768) {
-      modal.style.display = 'block';
-      body.style.overflow = 'hidden';
-      arrowImg.classList.add('rotate');
-    }
-  }
-  
-
-})
-
-
-function handleWindowSizeChange() {
-  const screenWidth = window.innerWidth;
-  
-  if (screenWidth < 768 && modal.style.display === 'block') {
-    modal.style.display = 'none';
-    body.style.overflow = 'auto';
-    arrowImg.classList.remove('rotate');
-  }
-}
-
-
-
-
-handleWindowSizeChange();
-
-window.addEventListener("resize", handleWindowSizeChange);*/
 
   const swiper = new Swiper('.swiper', {
     loop: true,
