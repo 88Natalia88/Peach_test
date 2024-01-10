@@ -153,7 +153,7 @@ function hideDesktopModal() {
 function handleWindowSizeChange() {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth >= 768) {
+  if (screenWidth >= 1025) {
     hideDesktopModal();
   }
 }
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
   showOfficies.addEventListener('click', function() {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth < 768) {
+    if (screenWidth <= 1024) {
       toggleMobileMenu();
     } else {
       if (modal.style.display === 'block') {
@@ -257,7 +257,7 @@ function animation(){
 
       })
 
-      mediaAnimation.add("(max-width: 576px)", () => {
+      mediaAnimation.add("(max-width: 768px)", () => {
         const tlFirstPage = gsap.timeline({})
         tlFirstPage.to('.first-page__title', {
           duration: 1,

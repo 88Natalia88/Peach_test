@@ -2,6 +2,9 @@
     position: relative;
     height: 600px;
     width: 100%;
+    @include xs{
+        height: 400px;
+    }
     @include xxs {
         height: 300px;
     }
@@ -16,8 +19,13 @@
         position: absolute;
         left: 170px;
         bottom: 158px;
+        @include xs{
+            //width: 280px;
+            bottom: 126px;
+            left: 50px;
+        }
         @include xxs {
-            width: 280px;
+            //width: 280px;
             bottom: 96px;
             left: 5px;
         }
@@ -44,6 +52,9 @@
         margin-right: 70px;
         border: none;
         cursor: pointer;
+        @include xs{
+            height: 46px;
+        }
         @include xxs {
             height: 32px;
         }
@@ -58,7 +69,10 @@
         width: 709px;
         top: 158px;
         left: 170px;
-        
+        @include xs{
+            top: 98px;
+            left: 50px;
+        }
         @include xxs {
             width: 280px;
             top: 40px;
@@ -74,7 +88,7 @@
         height: 352px;
         max-width: 1110px;
         box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
-        @include xxs {
+        @include xs {
             height: 181px;
         }
     }
@@ -82,10 +96,12 @@
         max-width: 890px;
         max-height: 152px;
         text-align: center;
-        
+        @include xxs {
+            max-width: 600px;
+            max-height: 133px;
+        }
         @include xxs {
             max-width: 280px;
-            max-height: 133px;
         }
     }
     &__text p{
@@ -96,7 +112,7 @@
         font-weight: 600;
         line-height: 120%;
         scale: 0;
-        @include xxs {
+        @include xs {
             font-size: 16px;
         }
     }
@@ -106,7 +122,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
-        @include xxs {
+        @include xs {
             font-size: 16px;
         }
     }
@@ -121,6 +137,13 @@
         column-gap: 180px;
         row-gap: 80px;
         justify-content: space-around;
+        @include sm{
+            max-width: 689px;
+        }
+        @include xs{
+            max-width: 500px;
+            row-gap: 50px;
+        }
         @include xxs {
             max-width: 264px;
             column-gap: 0px;
@@ -135,7 +158,7 @@
         line-height: 80%;
         opacity: 0.95;
         margin-bottom: 4px;
-        @include xxs {
+        @include xs {
             font-size: 40px;
         }
     }
@@ -146,7 +169,7 @@
         font-weight: 600;
         line-height: 100%;
         opacity: 0.95;
-        @include xxs {
+        @include xs {
             font-size: 30px; 
         }
     }
@@ -156,13 +179,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
-        @include xxs {
+        @include xs {
             font-size: 16px;
         }
     }
     .item-explanation.last{
         width: 240px;
-        @include xxs {
+        @include xs {
             width: 180px;
         }
     }
@@ -179,8 +202,12 @@
         background: #FFF;
         box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
         margin-bottom: 90px;
-        @include xxs {
+        @include sm{
+            min-height: 110px;
             display: block;
+        }
+        @include xxs {
+            
             min-height: 95px;
             max-width: 290px;
             margin: auto;
@@ -192,9 +219,13 @@
         margin-left: 70px;
         margin-top: 28px;
         z-index: 1;
+        @include sm{
+            margin-top: 0px;
+            margin-left: 50px;
+        }
         @include xxs{
             margin-left: 5px;
-            margin-top: 0px;
+            
         }
     }
     &__roll p{
@@ -203,6 +234,9 @@
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
+        @include sm{
+            margin-top: 10px;
+        }
         @include xxs{
             font-size: 20px;
             margin-top: 18px;
@@ -211,6 +245,9 @@
     &__roll img{
         width: 24px;
         height: 24px;
+        @include sm{
+            margin-top: 10px;
+        }
         @include xxs{
             width: 20px;
             height: 20px;
@@ -221,6 +258,9 @@
         outline: none;
         margin-left: 16px;
         cursor: pointer;
+        @include sm{
+            margin-left: 10px;
+        }
         @include xxs{
             margin-left: 6px;
         }
@@ -249,6 +289,9 @@
         column-gap: 30px;
         margin-top: 30px;
         margin-left: 159px;
+        @include sm{
+            margin-left: 50px;
+        }
         @include xxs{
             margin-top: 20px;
             margin-left: 5px;
@@ -385,7 +428,10 @@
     width: 100%;
     max-width: 1250px;
     height: 471px;
-
+    @include xs{
+      
+        height: 410px;
+    }
     @include xxs {
         max-width: 290px;
         height: 205px;
@@ -407,6 +453,9 @@
         left: 0;
         bottom: 25px;
         background-size: contain;
+        @include xs{
+            bottom: 10px;
+        }
         @include xxs{
             content: url('../../public/images/Left pattern.png');
         }
@@ -417,6 +466,9 @@
         background-size: contain;
         right: 0;
         bottom: 25px;
+        @include xs{
+            bottom: 10px;
+        }
         @include xxs{
             content: url('../../public/images/Right pattern.png');
         }
@@ -441,6 +493,9 @@
         font-weight: 400;
         line-height: 150%;
         scale: 0;
+        @include xs{
+            max-width: 670px;
+        }
         @include xxs {
             font-size: 16px;
             max-width: 280px;
@@ -448,6 +503,9 @@
     }
     &__text p{
         max-width: 1110px;
+        @include sm{
+            max-width: 900px;
+        }
         @include xxs{
             max-width: 280px;
         }
@@ -480,6 +538,9 @@
         width: 100%;
         max-width: 615px;
         height: 260px;
+        @include xs{
+            max-width: 354px;
+        }
         @include xxs{
             max-width: 280px;
         }
@@ -506,6 +567,9 @@
             -moz-transition: .5s;
             -ms-transition: .5s;
             -o-transition: .5s;
+            @include xs{
+                width: 354px;
+            }
             @include xxs{
                 width: 280px;
                 height: 60px;
@@ -551,8 +615,15 @@
             opacity: 0;
             margin: 20px auto auto 20px;
             width: 480px;
-            @include xxs{
+            @include sm{
+                width: 380px;
+            }
+            @include xs{
                 font-size: 16px;
+                width: 280px;
+                margin-top: 10px;
+            }
+            @include xxs{
                 margin: 10px auto auto 10px;
                 width: 260px;
             }
@@ -604,6 +675,9 @@
         height: 861px;
         background: #FFF;
         box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+        @include xs{
+            height: 615px;
+        }
         @include xxs{
             height: 922px;
         }
@@ -614,6 +688,9 @@
         font-weight: 600;
         padding-top: 80px;
         margin-bottom: 50px;
+        @include sm{
+            padding-top: 50px;
+        }
         @include xxs{
             padding-top: 24px;
             margin-bottom: 40px;
@@ -623,11 +700,17 @@
         display: flex;
         margin-left: 62px;
         padding-bottom: 75px;
+        @include sm{
+            flex-wrap: wrap;
+            margin-left: 20px;
+        }
+        @include xs{
+            column-gap: 10px;
+            
+        }
         @include xxs{
             column-gap: 10px;
-            row-gap: 25px;
             margin-left: 20px;
-            flex-wrap: wrap;
             padding-bottom: 24px;
             .benefits__item:last-child{
                 margin-left: 25%;
@@ -638,6 +721,9 @@
         display: flex;
         margin-top: 50px;
         margin-left: 256px;
+        @include sm{
+            margin-left: 20%;
+        }
         @include xxs{
             margin-left: 52px;
             flex-wrap: wrap;
@@ -657,7 +743,11 @@
         height: 160px;
         text-align: center;
         margin-left: 16px;
-        @include xxs{
+        @include sm{
+            width: 150px;
+            height: auto;
+        }
+        @include xs{
             width: 120px;
             height: auto;
             margin-left: 0px;
@@ -667,7 +757,7 @@
         width: 110px;
         height: 110px;
         margin-bottom: 10px;
-        @include xxs{
+        @include xs{
             width: 80px;
             height: 80px;
         }
@@ -679,7 +769,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 110%;
-        @include xxs{
+        @include xs{
             font-size: 16px;
         }
     }
@@ -692,7 +782,7 @@
         font-weight: 600;
         line-height: 120%;
         margin-bottom: 4px;
-        @include xxs{
+        @include xs{
             margin-top: 24px;
             font-size: 22px;
         }
@@ -704,7 +794,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 120%; 
-        @include xxs{
+        @include xs{
             font-size: 22px;
         } 
     }
@@ -714,9 +804,16 @@
         height: 1px;
         opacity: 0.1;
         background-color: rgba(0, 0, 0, 1);
+        @include sm {
+            width: 860px;
+            margin-left: 10px;
+        }
+        @include xs{
+            margin-left: 5px;
+            width: 670px;
+        }
         @include xxs{
             width: 280px;
-            margin-left: 5px;
         }
     }
 }
@@ -729,7 +826,7 @@
         color: $dark-color;
         font-weight: 600;
         text-align: left;
-        margin-left: 70px;
+        //margin-left: 70px;
         margin-bottom: 54px;
         @include xxs{
             margin-bottom: 15px;
@@ -743,15 +840,24 @@
     .swiper-slide img{
         width: 1110px;
         height: 834px;
+        @include xs{
+            width: 680px;
+            height: 480px;
+        }
         @include xxs{
             width: 280px;
             height: 210px;
         }
     }
+    
     .swiper-button-prev,
-    .swiper-button-next,
-    .swiper-pagination{
+    .swiper-button-next{
         @include xxs{
+            display: none;
+        }
+    }
+    @media (max-width: 875px) {
+        .swiper-pagination{
             display: none;
         }
     }

@@ -75,6 +75,12 @@ ul{
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
+    @include sm {
+        max-width: 880px;
+    }
+    @include xs{
+        max-width: 680px;
+    }
     @media (max-width: 576px) {
         max-width: 290px;
     }
