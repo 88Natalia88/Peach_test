@@ -314,13 +314,13 @@
         padding-bottom: 19px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(2, auto);
         grid-row-gap: 15px;
         margin-left: 50px;
         @include xxs{
             margin-left: 5px;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
         }
         .list__item p{
             color: $dark-color;
@@ -340,14 +340,16 @@
             .item{
                 display: flex;
                 column-gap: 3px;
-                
-                img{
-                    width: 8px;
-                    height: 5px;
+                .listBtn {
+                    //width: 8px;
+                    //height: 5px;
+                    font-size: 10px;
                     margin-left: 3px;
-                    margin-top: 3px;
+                    margin-top: 2px;
+                    font-family: $nova;
+                    color: $dark-color;
                 }
-                img.rotate {
+                button.rotate {
                     transform: rotate(180deg);
                 }
             }

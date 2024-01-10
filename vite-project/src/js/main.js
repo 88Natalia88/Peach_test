@@ -20,9 +20,7 @@ function showMobileMenu() {
     <div class="list__item">
     <div class='item'>
       <p>Москва</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/button-down.svg" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Москва</li>
@@ -31,9 +29,7 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Центр</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Воронеж</li>
@@ -44,9 +40,7 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Северо-<br>запад</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Санкт-Петербург</li>
@@ -56,9 +50,7 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Юг</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Ростов-на-<br>Дону</li>
@@ -69,9 +61,7 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Волга</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Казань</li>
@@ -84,9 +74,7 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Урал</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Екатеринбург</li>
@@ -100,9 +88,7 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Сибирь</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Новосибирск</li>
@@ -115,9 +101,7 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Дальний <br> восток</p>
-      <div class='item__button'>
-      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
-      </div>
+      <button class='listBtn'>&#9660;</button>
     </div>
     <ul>
       <li>Хабаровск</li>
@@ -135,6 +119,7 @@ function showMobileMenu() {
 
   listBtns.forEach((listBtn, index1) => {
     listBtn.addEventListener('click', function() {
+      listBtn.classList.toggle('rotate');
       nameItems.forEach((nameItem, index4) => {
         if (index1 === index4) {
           nameItem.style.color = nameItem.style.color === 'rgb(163, 12, 51)' ? 'rgba(68, 68, 68, 1)' : '#A30C33';
@@ -302,7 +287,7 @@ function animation(){
             const tlMission = gsap.timeline({
               scrollTrigger: {
                 trigger: '.mission',
-                start: 'top 75%',
+                start: 'top 85%',
                 scrub: 0.5,
                 //pin: true
               }
