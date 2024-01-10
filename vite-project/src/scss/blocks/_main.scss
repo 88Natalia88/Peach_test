@@ -313,10 +313,15 @@
         padding-top: 15px;
         padding-bottom: 19px;
         display: grid;
-        grid-template-columns: 1fr 93px 1fr;
-        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,1fr);
         grid-row-gap: 15px;
-        margin-left: 5px;
+        margin-left: 50px;
+        @include xxs{
+            margin-left: 5px;
+            grid-template-columns: 1fr 93px 1rf;
+            grid-template-rows: repeat(3,1fr);
+        }
         .list__item p{
             color: $dark-color;
             font-family: $nova;
@@ -840,6 +845,10 @@
     .swiper-slide img{
         width: 1110px;
         height: 834px;
+        @include sm{
+            width: 880px;
+            height: 680px;
+        }
         @include xs{
             width: 680px;
             height: 480px;
