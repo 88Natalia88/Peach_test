@@ -319,8 +319,8 @@
         margin-left: 50px;
         @include xxs{
             margin-left: 5px;
-            grid-template-columns: 1fr 93px 1rf;
-            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
         }
         .list__item p{
             color: $dark-color;
@@ -340,6 +340,13 @@
             .item{
                 display: flex;
                 column-gap: 3px;
+                
+                img{
+                    width: 8px;
+                    height: 5px;
+                    margin-left: 3px;
+                    margin-top: 3px;
+                }
                 img.rotate {
                     transform: rotate(180deg);
                 }

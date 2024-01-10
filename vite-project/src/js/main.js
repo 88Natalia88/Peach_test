@@ -20,7 +20,9 @@ function showMobileMenu() {
     <div class="list__item">
     <div class='item'>
       <p>Москва</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/button-down.svg" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Москва</li>
@@ -29,7 +31,9 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Центр</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Воронеж</li>
@@ -40,7 +44,9 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Северо-<br>запад</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Санкт-Петербург</li>
@@ -50,7 +56,9 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Юг</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Ростов-на-<br>Дону</li>
@@ -61,7 +69,9 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Волга</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Казань</li>
@@ -74,7 +84,9 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Урал</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Екатеринбург</li>
@@ -88,7 +100,9 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Сибирь</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Новосибирск</li>
@@ -101,7 +115,9 @@ function showMobileMenu() {
   <div class="list__item">
     <div class='item'>
       <p>Дальний <br> восток</p>
-      <button class='listBtn'><img src="../public/icons/arrow.png" alt="arrow"></button>
+      <div class='item__button'>
+      <button class='listBtn'><img src="./public/icons/arrow.png" alt="arrow"></button>
+      </div>
     </div>
     <ul>
       <li>Хабаровск</li>
