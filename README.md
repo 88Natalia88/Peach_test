@@ -14,8 +14,12 @@ Website for Softline a leading supplier of IT solutions and services​
 ## Result
 ​
 ![images alt](https://github.com/88Natalia88/Peach_test/blob/main/screen1.png)
-![images alt](https://github.com/88Natalia88/Healthy-food/blob/main/healthy%20screen2.png)
-![images alt](https://github.com/88Natalia88/Healthy-food/blob/main/healthy%20screen3.png)
+![images alt](https://github.com/88Natalia88/Peach_test/blob/main/screen2.png)
+![images alt](https://github.com/88Natalia88/Peach_test/blob/main/screen3.png)
+![images alt](https://github.com/88Natalia88/Peach_test/blob/main/screen4.png)
+![images alt](https://github.com/88Natalia88/Peach_test/blob/main/screen5.png)
+![images alt](https://github.com/88Natalia88/Peach_test/blob/main/screen6.png)
+![images alt](https://github.com/88Natalia88/Peach_test/blob/main/screen7.png)
 
 
 ## Author
